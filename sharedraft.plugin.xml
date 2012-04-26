@@ -8,6 +8,7 @@
 	<description><![CDATA[Allows an author to share a draft of a post using a special link.]]></description>
 
 	<copyright>2012</copyright>
+	<guid>fed3fd1b-2963-4e8a-bf72-1fc32752bf56</guid>
 	
 	<help>
 		<value><![CDATA[<p>In the settings drawer of the post composition page you can find a "Share This Post" URL, which will provide anyone who has it with the public-facing display of that post, regardless of its publication status or permissions.</p>]]></value>
