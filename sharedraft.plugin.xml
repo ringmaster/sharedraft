@@ -2,10 +2,14 @@
 <pluggable type="plugin">
 	<name>Share Draft</name>
 	<author url="http://asymptomatic.net/">Owen Winkler</author>
-	<version>1.0.2</version>
-	<url>http://habariproject.org/</url>
+	
+	<version>1.1</version>
+	<url>https://github.com/ringmaster/sharedraft</url>
 	<description><![CDATA[Allows an author to share a draft of a post using a special link.]]></description>
-	<license url="http://www.apache.org/licenses/LICENSE-2.0.html">Apache License 2.0</license>
-	<copyright>2009</copyright>
-</pluggable> 
- 
+
+	<copyright>2012</copyright>
+	
+	<help>
+		<value><![CDATA[<p>In the settings drawer of the post composition page you can find a "Share This Post" URL, which will provide anyone who has it with the public-facing display of that post, regardless of its publication status or permissions.</p>]]></value>
+	</help>
+</pluggable>

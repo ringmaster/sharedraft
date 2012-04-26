@@ -15,6 +15,7 @@ class ShareDraftPlugin extends Plugin
 			$key = $_GET['sharedraft'];
 			if($key == md5($slug . Options::get('guid'))) {
 				$filters['status'] = Post::status( 'any' );
+				$filters['ignore_permissions'] = true;
 			}
 		}
 		return $filters;
@@ -28,7 +29,7 @@ class ShareDraftPlugin extends Plugin
 	 */
 	function action_form_publish($form, $post)
 	{
-		if($post->slug != '' && $post->status == Post::status('draft')) {
+		if($post->slug != '') {
 			$key = md5($post->slug . Options::get('guid'));
 			$url = "{$post->permalink}?sharedraft={$key}";
 			$notice = <<< NOTICE
