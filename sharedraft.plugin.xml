@@ -3,7 +3,7 @@
 	<name>Share Draft</name>
 	<author url="http://asymptomatic.net/">Owen Winkler</author>
 	
-	<version>1.1</version>
+	<version>0.9.x-1.1</version>
 	<url>https://github.com/ringmaster/sharedraft</url>
 	<description><![CDATA[Allows an author to share a draft of a post using a special link.]]></description>
 
