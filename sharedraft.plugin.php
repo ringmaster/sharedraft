@@ -9,7 +9,7 @@ class ShareDraftPlugin extends Plugin
 	 * @return array The modified array, if the key is set
 	 */
 	function filter_posts_get_paramarray($filters) {
-		if(isset($_GET['sharedraft'])) {
+		if(isset($_GET['sharedraft']) && isset($filters['slug'])) {
 			$slug = $filters['slug'];
 			$key = $_GET['sharedraft'];
 			if($key == md5($slug . Options::get('guid'))) {
