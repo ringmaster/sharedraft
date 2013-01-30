@@ -8,9 +8,8 @@ class ShareDraftPlugin extends Plugin
 	 * @param array $filters The array of pre-existing filters
 	 * @return array The modified array, if the key is set
 	 */
-	function filter_template_where_filters($filters)
-	{
-		if(isset($_GET['sharedraft']) && isset($filters['status']) && $filters['status'] == Post::status('published')) {
+	function filter_posts_get_paramarray($filters) {
+		if(isset($_GET['sharedraft'])) {
 			$slug = $filters['slug'];
 			$key = $_GET['sharedraft'];
 			if($key == md5($slug . Options::get('guid'))) {
